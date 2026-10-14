@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 13:57:03 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 14:21:34 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/14 15:01:06 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dlen + i] = '\0';
 	return (dlen + slen);
 }
-
 /*#include <bsd/string.h>
 #include <stdio.h>
 

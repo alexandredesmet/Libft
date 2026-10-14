@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 14:28:33 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 14:35:11 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/14 15:01:08 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int	ft_toupper(int c)
 		return (c - 32);
 	return (c);
 }
-
 /*#include <stdio.h>
 
 int	main(int ac, char **av)
