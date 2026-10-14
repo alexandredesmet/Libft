@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:53:53 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 11:06:42 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/14 13:52:54 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memset(void *s, int c, size_t n)
 		p[i] = c;
 	return (s);
 }
-#include <stdio.h>
+/*#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -31,4 +31,4 @@ int	main(void)
 	char str[10] = "abcdefgh";
 	ft_memset(str, 'X', 4);
 	printf("%s", str);
-}
+}*/
