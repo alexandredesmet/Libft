@@ -20,7 +20,7 @@ make
 
 * **Documentation & Manuals:** 
   * Unix `man` pages for standard behavior definitions.
-  * C programming reference guides for memory management, pointers, and structures.
+  * Gemini AI
 * **Testing & Validation:** 
   * Mains are left in comment beneath each function to test them individually.   
   * Peer-created test suites (such as `libft-unit-test` or `libftTester`) used during development to verify edge cases.
