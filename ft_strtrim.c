@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:37:01 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 12:22:27 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:50 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 int	main(int ac, char **av)
 {
+	char	*trim;
+
 	(void)ac;
-	char *trim = ft_strtrim(av[1], av[2]);
+	trim = ft_strtrim(av[1], av[2]);
 	printf("%s", trim);
 	free(trim);
-}*/
+}
+*/

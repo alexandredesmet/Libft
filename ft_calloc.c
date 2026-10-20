@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 17:57:25 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 18:17:16 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:05:03 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(p, nmemb * size);
 	return (p);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(void)
 {
-	size_t i;
-	int *arr;
+	size_t	i;
+	int		*arr;
 
 	arr = ft_calloc(5, sizeof(int));
 	if (!arr)
@@ -41,4 +42,5 @@ int	main(void)
 		i++;
 	}
 	free(arr);
-}*/
+}
+*/

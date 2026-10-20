@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 18:58:36 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 19:35:57 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:12:20 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ char	*ft_nul_sub(void)
 	sub[0] = '\0';
 	return (sub);
 }
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
@@ -47,14 +48,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	sub[i] = '\0';
 	return (sub);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
 
 int	main(int ac, char **av)
 {
+	char	*sub;
+
 	(void)ac;
-	char *sub;
 	sub = ft_substr(av[1], atoi(av[2]), atoi(av[3]));
 	printf("%s", sub);
 	free(sub);
-}*/
+}
+*/

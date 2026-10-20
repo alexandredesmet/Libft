@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:49:08 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 14:51:24 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:47 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,12 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
 	printf("%ld", ft_strlen(av[1]));
-}*/
+}
+*/

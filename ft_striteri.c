@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:15:35 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 14:32:22 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:53 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 void	ft_titer(unsigned int a, char *s)
 {
@@ -35,7 +36,7 @@ void	ft_titer(unsigned int a, char *s)
 int	main(int ac, char **av)
 {
 	(void)ac;
-
 	ft_striteri(av[1], ft_titer);
 	printf("%s", av[1]);
-}*/
+}
+*/

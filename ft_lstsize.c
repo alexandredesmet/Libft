@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 15:59:23 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 16:09:49 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:04:37 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,14 @@ unsigned int	ft_lstsize(t_list *lst)
 	}
 	return (size);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(void)
 {
-	t_list *head;
-	t_list *n1;
-	t_list *n2;
+	t_list	*head;
+	t_list	*n1;
+	t_list	*n2;
 
 	head = NULL;
 	n1 = ft_lstnew("First Node");
@@ -47,4 +48,5 @@ int	main(void)
 	}
 	free(n1);
 	free(n2);
-}*/
+}
+*/

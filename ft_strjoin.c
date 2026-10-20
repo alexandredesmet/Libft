@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 11:06:04 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 11:35:46 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:58 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_memcpy(join + ft_strlen(s1), s2, ft_strlen(s2));
 	return (join);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(int ac, char **av)
 {
+	char	*join;
+
 	(void)ac;
-	char *join;
 	join = ft_strjoin(av[1], av[2]);
 	printf("%s\n", join);
 	free(join);
-}*/
+}
+*/

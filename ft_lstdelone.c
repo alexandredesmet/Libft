@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:42:23 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 17:01:36 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:04:52 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *))
 	del(lst->content);
 	free(lst);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 void	del_content(void *content)
 {
@@ -28,7 +29,10 @@ void	del_content(void *content)
 }
 int	main(int ac, char **av)
 {
+	t_list	*node;
+
 	(void)ac;
-	t_list *node = ft_lstnew(av[1]);
+	node = ft_lstnew(av[1]);
 	ft_lstdelone(node, del_content);
-}*/
+}
+*/

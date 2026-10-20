@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 15:45:50 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 16:03:38 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:04:38 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -36,4 +37,5 @@ int	main(int ac, char **av)
 	(void)ac;
 	printf("ft_memchr:%s\n   memchr:%s", (char *)ft_memchr(av[1], av[2][0],
 			atoi(av[3])), (char *)memchr(av[1], av[2][0], atoi(av[3])));
-}*/
+}
+*/

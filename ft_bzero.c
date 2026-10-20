@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 11:27:27 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 12:25:18 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:05:03 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ void	ft_bzero(void *s, size_t n)
 	while (n--)
 		((unsigned char *)s)[n] = 0;
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 
 int	main(void)
@@ -28,4 +29,5 @@ int	main(void)
 	ft_bzero(str1, 4);
 	bzero(str2, 4);
 	printf("%s | %s", &str1[5], &str2[5]);
-}*/
+}
+*/

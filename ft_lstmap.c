@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 17:43:23 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 18:18:48 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:32:27 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,18 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
 	t_list	*tmp;
+	void	*content;
 
-	if (!lst || !f || !del)
+	if (!lst || !f)
 		return (NULL);
 	new = NULL;
 	while (lst)
 	{
-		tmp = ft_lstnew(f(lst->content));
+		content = f(lst->content);
+		tmp = ft_lstnew(content);
 		if (!tmp)
 		{
-			ft_lstdelone(tmp, del);
+			del(content);
 			ft_lstclear(&new, del);
 			return (NULL);
 		}
@@ -34,7 +36,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 void	ft_delone(void *content)
 {
@@ -52,11 +55,11 @@ void	*ft_spoil_content(void *content)
 }
 int	main(void)
 {
-	t_list *head;
-	t_list *n1;
-	t_list *n2;
-	t_list *n3;
-	t_list *map;
+	t_list	*head;
+	t_list	*n1;
+	t_list	*n2;
+	t_list	*n3;
+	t_list	*map;
 
 	head = NULL;
 	n1 = ft_lstnew(ft_strdup("First Node"));
@@ -65,8 +68,7 @@ int	main(void)
 	ft_lstadd_front(&head, n2);
 	n3 = ft_lstnew(ft_strdup("Third Node"));
 	ft_lstadd_front(&head, n3);
-
 	map = ft_lstmap(head, ft_spoil_content, ft_delone);
-
 	ft_lstiter(map, ft_print);
-}*/
+}
+	*/

@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 12:22:44 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 13:02:57 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:46 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ int	ft_count_words(char const *s, char c)
 	}
 	return (count);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
@@ -59,12 +60,14 @@ char	**ft_split(char const *s, char c)
 	split[j] = NULL;
 	return (split);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(int ac, char **av)
 {
-	int i;
-	char **r;
+	int		i;
+	char	**r;
+
 	if (ac != 3)
 		return (1);
 	r = ft_split(av[1], av[2][0]);
@@ -74,4 +77,5 @@ int	main(int ac, char **av)
 		printf("%s\n", r[i]);
 		i++;
 	}
-}*/
+}
+*/

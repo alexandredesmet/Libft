@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 13:51:44 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 14:12:58 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:48 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	mapi[i] = '\0';
 	return (mapi);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 char	ft_tmap(unsigned int a, char c)
 {
@@ -40,10 +41,11 @@ char	ft_tmap(unsigned int a, char c)
 }
 int	main(int ac, char **av)
 {
-	(void)ac;
-	char *mapi;
+	char	*mapi;
 
+	(void)ac;
 	mapi = ft_strmapi(av[1], ft_tmap);
 	printf("%s", mapi);
 	free(mapi);
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 16:55:05 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 17:14:57 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:05:02 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ int	ft_atoi(const char *nptr)
 	}
 	return (sign * ans);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <stdlib.h>
 
 int	main(int ac, char **av)
@@ -42,4 +43,5 @@ int	main(int ac, char **av)
 	(void)ac;
 	printf("ft_atoi:%d\n", ft_atoi(av[1]));
 	printf("   atoi:%d\n", atoi(av[1]));
-}*/
+}
+*/

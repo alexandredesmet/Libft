@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:02:20 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 13:52:18 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:05:05 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
 	printf("%d", ft_isascii(av[1][0]));
-}*/
+}
+*/

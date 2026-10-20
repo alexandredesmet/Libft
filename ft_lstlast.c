@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 16:10:49 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 16:21:21 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:04:50 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,17 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(void)
 {
-	t_list *head;
-	t_list *n1;
-	t_list *n2;
-	t_list *n3;
-	t_list *last;
+	t_list	*head;
+	t_list	*n1;
+	t_list	*n2;
+	t_list	*n3;
+	t_list	*last;
+
 	head = NULL;
 	n1 = ft_lstnew("First Node");
 	ft_lstadd_front(&head, n1);
@@ -41,4 +43,5 @@ int	main(void)
 	free(n1);
 	free(n2);
 	free(n3);
-}*/
+}
+*/

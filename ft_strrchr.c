@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 14:54:07 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 14:59:50 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:11:48 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	len;
 
 	len = ft_strlen(s);
+	if (!c)
+		return ((char *)s + len);
 	while (len--)
 	{
 		if (s[len] == c)
@@ -24,10 +26,12 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
 	printf("%s", ft_strrchr(av[2], av[1][0]));
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 13:57:03 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/14 15:01:06 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:06:58 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,22 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dlen + i] = '\0';
 	return (dlen + slen);
 }
-/*#include <bsd/string.h>
+/*
+#include <bsd/string.h>
 #include <stdio.h>
 
 size_t	ft_strlen(const char *str);
 
 int	main(void)
 {
-	char tab1[15] = "Bonjour";
-	char tab2[12] = "CommentCaVa";
-	char tab3[15] = "Bonjour";
-	char tab4[12] = "commentCaVa";
-	unsigned int size = 15;
+	char			tab1[15] = "Bonjour";
+	char			tab2[12] = "CommentCaVa";
+	char			tab3[15] = "Bonjour";
+	char			tab4[12] = "commentCaVa";
+	unsigned int	size;
+
+	size = 15;
 	printf("ft_strlcat : %ld %s\n   strlcat : %ld %s", ft_strlcat(tab1, tab2,
 			size), tab1, strlcat(tab3, tab4, size), tab3);
-}*/
+}
+*/

@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 14:50:33 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 15:01:03 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/20 19:04:34 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int	nb;
+	long	nb;
 
 	nb = n;
 	if (fd < 0)
@@ -28,10 +28,12 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(nb / 10, fd);
 	ft_putchar_fd(nb % 10 + '0', fd);
 }
-/*#include <stdlib.h>
+/*
+#include <stdlib.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
 	ft_putnbr_fd(atoi(av[1]), atoi(av[2]));
-}*/
+}
+*/
