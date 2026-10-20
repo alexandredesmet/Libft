@@ -13,8 +13,8 @@ This library reimplements some standard C library functions, string manipulation
 
 To compile the library and generate the `libft.a` static archive, run:
 
-```bash
-make
+'```bash
+make'
 
 ## Resources
 
