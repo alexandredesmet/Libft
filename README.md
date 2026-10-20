@@ -13,9 +13,9 @@ This library reimplements some standard C library functions, string manipulation
 
 To compile the library and generate the `libft.a` static archive, run:
 
-'```bash
-make'
-
+```bash
+make
+```
 ## Resources
 
 * **Documentation & Manuals:** 
@@ -25,5 +25,5 @@ make'
   * Mains are left in comment beneath each function to test them individually.   
   * Peer-created test suites (such as `libft-unit-test` or `libftTester`) used during development to verify edge cases.
 * **AI Usage Disclosure:** 
-  * *Tasks:* AI was used to assist in structuring documentation, outlining edge cases for complex parsing functions, searching information quicker and verifying Makefile best practices.
-  * *Scope & Compliance:* AI was not used to generate or copy direct implementations of the functions. All core logic, debugging, and structural decisions were carried out independently.
+  * AI was used to assist in structuring documentation, outlining edge cases for complex parsing functions, searching information quicker and verifying Makefile best practices.
+  * AI was not used to generate or copy direct implementations of the functions. All core logic, debugging, and structural decisions were carried out independently.
