@@ -6,13 +6,13 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 13:10:09 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 18:45:27 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/27 12:01:56 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_digit(int n)
+static int	ft_count_digit(int n)
 {
 	int	c;
 

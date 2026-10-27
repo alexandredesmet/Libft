@@ -6,13 +6,13 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/20 12:22:44 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 19:06:46 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/27 13:52:46 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_count_words(char const *s, char c)
+static int	ft_count_words(char const *s, char c)
 {
 	int	count;
 	int	f;
@@ -33,31 +33,41 @@ int	ft_count_words(char const *s, char c)
 	return (count);
 }
 
+static void	ft_free_split(char **split, size_t j)
+{
+	while (j > 0)
+	{
+		j--;
+		free(split[j]);
+	}
+	free(split);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
-	char	**split;
+	size_t		i;
+	const char	*tmp;
+	char		**split;
 
-	split = (char **)malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
+	if (!s)
+		return (NULL);
+	split = (char **)ft_calloc((ft_count_words(s, c) + 1), sizeof(char *));
 	if (!split)
 		return (NULL);
 	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
+	while (*s)
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((!s[i] || s[i] == c) && index >= 0)
-		{
-			split[j++] = ft_substr(s, index, i - index);
-			index = -1;
-		}
-		i++;
+		while (*s == c)
+			s++;
+		tmp = s;
+		while (*s && *s != c)
+			s++;
+		if (tmp == s)
+			break ;
+		split[i] = ft_substr(tmp, 0, s - tmp);
+		if (!split[i++])
+			return (ft_free_split(split, i), NULL);
 	}
-	split[j] = NULL;
 	return (split);
 }
 /*

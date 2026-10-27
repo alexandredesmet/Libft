@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 10:53:53 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 19:04:49 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:34:44 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	size_t			i;
 
 	p = (unsigned char *)s;
-	i = -1;
-	while (++i < n)
+	i = 0;
+	while (i < n)
+	{
 		p[i] = c;
+		i++;
+	}
 	return (s);
 }
 /*

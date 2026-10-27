@@ -14,6 +14,8 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
+	if (!dest && !src)
+		return (NULL);
 	while (n--)
 		((unsigned char *)dest)[n] = ((unsigned char *)src)[n];
 	return (dest);
@@ -28,6 +30,8 @@ int	main(void)
 	char	str2[10] = "0000efgh";
 
 	ft_memcpy(str2, str1, 4);
+	ft_memcpy(((void *)0), ((void *)0), 3);
+	memcpy(((void *)0), ((void *)0), 3);
 	printf("%s", str2);
 }
 */

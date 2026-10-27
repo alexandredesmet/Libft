@@ -6,14 +6,13 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 09:58:37 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 19:06:52 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/27 12:23:10 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
 

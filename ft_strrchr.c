@@ -6,7 +6,7 @@
 /*   By: adesmet <adesmet@student.42belgium.be>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/14 14:54:07 by adesmet           #+#    #+#             */
-/*   Updated: 2026/10/20 19:11:48 by adesmet          ###   ########.fr       */
+/*   Updated: 2026/10/21 11:13:53 by adesmet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,24 +14,27 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	len;
+	const char	*last;
 
-	len = ft_strlen(s);
-	if (!c)
-		return ((char *)s + len);
-	while (len--)
+	last = NULL;
+	while (*s)
 	{
-		if (s[len] == c)
-			return ((char *)s + len);
+		if (*s == (unsigned char)c)
+			last = s;
+		s++;
 	}
-	return (0);
+	if (*s == (unsigned char)c)
+		last = s;
+	return ((char *)last);
 }
 /*
 #include <stdio.h>
+#include <string.h>
 
 int	main(int ac, char **av)
 {
 	(void)ac;
-	printf("%s", ft_strrchr(av[2], av[1][0]));
-}
-*/
+	(void)av;
+	printf("%s", ft_strrchr("teste", '\0'));
+	printf("%s", strrchr("teste", '\0'));
+}*/
